@@ -1,8 +1,9 @@
-package tn.rnu.eniso.messagingapp.presentation.controller;
+package tn.rnu.eniso.fwk.tp4fwk.presentation.controller;
 
 import org.springframework.web.bind.annotation.*;
-import tn.rnu.eniso.messagingapp.model.MessageDTO;
-import tn.rnu.eniso.messagingapp.service.ChatService;
+
+import tn.rnu.eniso.fwk.tp4fwk.model.dto.MessageDTO;
+import tn.rnu.eniso.fwk.tp4fwk.service.ChatService;
 
 @RestController
 public class ChatController {
@@ -18,8 +19,8 @@ public class ChatController {
         chatService.sendMessage(message);
     }
 
-    @GetMapping("/chat/receive")
-    public MessageDTO receiveMessage(@RequestParam String receiverName) throws InterruptedException {
-        return chatService.receiveMessage(receiverName);
+    @PostMapping("/chat/receive")
+    public MessageDTO receiveMessage(@RequestBody MessageDTO message) throws InterruptedException {
+        return chatService.receiveMessage(message.getReceiver_name());
     }
 }

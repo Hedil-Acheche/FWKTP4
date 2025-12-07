@@ -1,9 +1,9 @@
-package tn.rnu.eniso.fwk;
+package tn.rnu.eniso.fwk.tp4fwk;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = "tn.rnu.eniso.messagingapp")
+@SpringBootApplication
 public class Tp4FwkApplication {
 
     public static void main(String[] args) {

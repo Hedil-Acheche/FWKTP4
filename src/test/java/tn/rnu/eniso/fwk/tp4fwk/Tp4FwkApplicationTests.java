@@ -1,4 +1,4 @@
-package tn.rnu.eniso.fwk;
+package tn.rnu.eniso.fwk.tp4fwk;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

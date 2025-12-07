@@ -1,4 +1,4 @@
-package tn.rnu.eniso.messagingapp.model;
+package tn.rnu.eniso.fwk.tp4fwk.model.dto;
 
 import lombok.Getter;
 import lombok.Setter;
